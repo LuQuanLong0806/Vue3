@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 // import HomeView from '../views/HomeView.vue'
 // import routes from '~pages' // vite-plugin-pages
 import { routes } from 'vue-router/auto-routes'
+import { setupLayouts } from 'virtual:generated-layouts'
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   // routes: [
@@ -11,7 +13,7 @@ const router = createRouter({
   //     component: HomeView
   //   },
   // ]
-  routes
+  routes: setupLayouts(routes)
 })
 
 export default router
