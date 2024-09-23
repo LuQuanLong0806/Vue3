@@ -11,3 +11,7 @@ import { defineComponent } from 'vue'
 // })
 </script>
 <style scoped></style>
+<route lang="yaml">
+meta:
+  layout: layout
+</route>

@@ -1,10 +1,10 @@
 <template>
-  <div>about</div>
+  <div>Not Fund</div>
 </template>
 
 <script setup lang="ts"></script>
 <style scoped></style>
 <route lang="yaml">
 meta:
-  layout: layout
+  layout: 404
 </route>
